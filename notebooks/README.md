@@ -47,6 +47,9 @@ The repository is structured as follows:
 - Checks which publishers contribute most to the news feed and check the difference in the type of news they report.
 - Identify unique domains to see if certain organizations contribute more frequently.
 
+**Task2**
+- Load and prepare the data.
+
 ## Setup and Installation
 
 To run the notebooks locally, follow these steps:
