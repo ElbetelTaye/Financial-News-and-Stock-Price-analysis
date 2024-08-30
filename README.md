@@ -22,6 +22,8 @@ The repository is structured as follows:
 │   └── __init__.py
 ├── notebooks/
 │   ├── __init__.py
+|   ├── Task1.ipynb
+|   ├── Task2.ipynb
 │   └── README.md
 ├── tests/
 │   └── __init__.py
