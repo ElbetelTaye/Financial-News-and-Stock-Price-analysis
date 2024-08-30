@@ -1,7 +1,5 @@
 pandas
-numpy
-requests
-pytest
 seaborn
 matplotlib
-scipy
+Sklearn
+Nltk
