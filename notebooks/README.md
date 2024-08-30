@@ -34,18 +34,18 @@ The repository is structured as follows:
 **Task1**
    - This notebook covers 
     1. Descriptive Statistics:
-■	To Obtain basic statistics for textual lengths (like headline length).
-■	Count the number of articles per publisher to identify which publishers are most active.
-■	Analyze the publication dates to see trends over time, such as increased news frequency on particular days or during specific events.
+- To Obtain basic statistics for textual lengths (like headline length).
+- Count the number of articles per publisher to identify the most active publishers.
+- Analyze the publication dates to see trends, such as increased news frequency on particular days or during specific events.
 2. Text Analysis(Sentiment analysis & Topic Modeling):
-■	Perform sentiment analysis on headlines to gauge the sentiment (positive, negative, neutral) associated with the news.
-■	Use natural language processing to identify common keywords or phrases, potentially extracting topics or significant events (like "FDA approval", "price target", etc.).
+  - Perform sentiment analysis on headlines to gauge the sentiment (positive, negative, neutral) associated with the news.
+  - Use natural language processing to identify common keywords or phrases, potentially extracting topics or significant events (like "FDA approval", "price target", etc.).
 3. Time Series Analysis:
-■	Analyzes the publication frequency over time.
-■ Check for spikes in article publications related to specific market events.
+- Analyzes the publication frequency over time.
+- Check for spikes in article publications related to specific market events.
 4. Publisher Analysis:
-■	Checks which publishers contribute most to the news feed and check the difference in the type of news they report.
-■ Identify unique domains to see if certain organizations contribute more frequently.
+- Checks which publishers contribute most to the news feed and check the difference in the type of news they report.
+- Identify unique domains to see if certain organizations contribute more frequently.
 
 ## Setup and Installation
 
