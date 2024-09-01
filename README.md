@@ -4,7 +4,8 @@
 The project involves analyzing a large corpus of financial news data to discover correlations between news sentiment and stock market movements. The goal is to understand how news sentiment affects stock prices and to identify significant trends and events. The analysis involves a rigorous sentimental and correlation analysis of the financial news dataset.
 
 ### Notebooks:
-1. **Task1: Descriptive Statics, Text analysis (Sentiment analysis & Topic Modeling), Time Series Analysis, Publisher Analysis** 
+1. **Task1: Descriptive Statics, Text analysis (Sentiment analysis & Topic Modeling), Time Series Analysis, Publisher Analysis**
+2. **Task2: Quantitative analysis using pynance and TaLib**
 
 ## Project Structure
 
@@ -22,6 +23,8 @@ The repository is structured as follows:
 │   └── __init__.py
 ├── notebooks/
 │   ├── __init__.py
+|   ├── Task1.ipynb
+|   ├── Task2.ipynb
 │   └── README.md
 ├── tests/
 │   └── __init__.py
