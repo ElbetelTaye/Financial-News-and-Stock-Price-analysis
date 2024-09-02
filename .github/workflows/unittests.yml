@@ -1,0 +1,29 @@
+name: Run Unit Tests
+
+on:
+  push:
+    branches: [ main, task-1, task-2, task-3 ]  # Include all relevant branches
+  pull_request:
+    branches: [ main, task-1, task-2, task-3 ]  # Include all relevant branches
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v3
+
+    - name: Set up Python environment
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'  # Specify your Python version
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Unit Tests
+      run: |
+        pytest  # Run your unit tests
