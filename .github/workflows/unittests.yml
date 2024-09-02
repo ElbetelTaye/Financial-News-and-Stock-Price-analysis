@@ -2,9 +2,9 @@ name: Run Unit Tests
 
 on:
   push:
-    branches: [ main, task-1, task-2, task-3 ]  # Include all relevant branches
+    branches: [ main, task-1, task-2, task-3 ]
   pull_request:
-    branches: [ main, task-1, task-2, task-3 ]  # Include all relevant branches
+    branches: [ main, task-1, task-2, task-3 ]
 
 jobs:
   test:
@@ -17,7 +17,7 @@ jobs:
     - name: Set up Python environment
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'  # Specify your Python version
+        python-version: '3.12.5'  # Specifying Python version 3.12.5
 
     - name: Install dependencies
       run: |
@@ -26,4 +26,4 @@ jobs:
 
     - name: Run Unit Tests
       run: |
-        pytest  # Run your unit tests
+        pytest
