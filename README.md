@@ -1,16 +1,33 @@
 # Financial-News-and-Stock-Price-analysis
 ## Overview
 
-The project involves analyzing a large corpus of financial news data to discover correlations between news sentiment and stock market movements. The goal is to understand how news sentiment affects stock prices and to identify significant trends and events. The analysis involves a rigorous sentimental and correlation analysis of the financial news dataset.
+This project explores the relationship between financial news sentiment and stock market movements. By analyzing a large dataset of financial news articles and stock prices, we aim to uncover how sentiment from news headlines correlates with stock price changes. This project is divided into three main tasks:
 
-### Notebooks:
-1. **Task1: Descriptive Statics, Text analysis (Sentiment analysis & Topic Modeling), Time Series Analysis, Publisher Analysis**
-2. **Task2: Quantitative analysis using pynance and TaLib**
+- Descriptive analysis of financial news data - Analyzing headline lengths, publication trends, and sentiment distributions.
+- Stock data analysis - Performing technical analysis on stock data.
+- Correlation analysis between news sentiment and stock prices - Aligning news and stock price data by dates and analyzing sentiment's impact on stock returns.
+
+### Datasets
+
+The project uses two primary datasets:
+
+Financial News Dataset: Contains headlines, URLs, publishers, publication dates, and stock ticker symbols.
+Stock Market Dataset: Contains daily stock prices, including Open, High, Low, Close, Volume, Dividends, and Stock Splits data for seven companies.
+
+### Tools and Libraries
+- Python: Main programming language used for analysis.
+- Pandas: For data manipulation and preparation.
+- Matplotlib & Seaborn: For data visualization.
+- TA-Lib: For performing technical analysis on stock data.
+- VADER Sentiment Analysis: For analyzing the sentiment of news headlines.
+- LDA (Latent Dirichlet Allocation): For topic modeling of news headlines.
+- yfinance: For fetching historical stock price data.
 
 ## Project Structure
 
 The repository is structured as follows:
 
+```
 ├── .vscode/
 │   └── settings.json
 ├── .github/
@@ -23,33 +40,16 @@ The repository is structured as follows:
 │   └── __init__.py
 ├── notebooks/
 │   ├── __init__.py
-|   ├── Task1.ipynb
-|   ├── Task2.ipynb
+│   ├── Task1.ipynb
+│   ├── Task2.ipynb
+│   ├── Task3.ipynb
 │   └── README.md
 ├── tests/
 │   └── __init__.py
 └── scripts/
     ├── __init__.py
     └── README.md
-
-
-## Notebooks
-
-**Task1**
-   - This notebook covers 
-    1. Descriptive Statistics:
-- To Obtain basic statistics for textual lengths (like headline length).
-- Count the number of articles per publisher to identify the most active publishers.
-- Analyze the publication dates to see trends, such as increased news frequency on particular days or during specific events.
-2. Text Analysis(Sentiment analysis & Topic Modeling):
-  - Perform sentiment analysis on headlines to gauge the sentiment (positive, negative, neutral) associated with the news.
-  - Use natural language processing to identify common keywords or phrases, potentially extracting topics or significant events (like "FDA approval", "price target", etc.).
-3. Time Series Analysis:
-- Analyzes the publication frequency over time.
-- Check for spikes in article publications related to specific market events.
-4. Publisher Analysis:
-- Checks which publishers contribute most to the news feed and check the difference in the type of news they report.
-- Identify unique domains to see if certain organizations contribute more frequently.
+```
 
 ## Setup and Installation
 
@@ -87,13 +87,34 @@ To run the notebooks locally, follow these steps:
 6. **Open the Notebook**:
    - Once Jupyter Notebook is launched, open the Task1 notebook to run it interactively.
 
-## Results
+### Usage
 
-The analysis results include:
-- **Descriptive Statistics**
-- **Text Analysis (Sentiment analysis and Topic modeling)**
-- **Time Series Analysis**
-- **Publisher Analysis**
+The project is divided into several Jupyter notebooks and scripts for different tasks:
+
+#### Task 1: News Dataset Analysis:
+
+- Explore the distribution of headline lengths, analyze trends in publication dates, perform sentiment analysis, and extract topics from the news dataset.
+- Open and run notebooks/Task1_Analysis.ipynb.
+
+#### Task 2: Stock Data Analysis:
+
+- Perform technical analysis on stock prices, including calculating moving averages, RSI, MACD, and volatility.
+- Open and run notebooks/Task2_Analysis.ipynb.
+
+#### Task 3: Sentiment and Stock Price Correlation Analysis:
+
+- Align the news and stock price datasets, analyze the correlation between sentiment and stock returns, and visualize the results.
+- Open and run notebooks/Task3_Analysis.ipynb.
+
+### Results
+
+- Sentiment Distribution: The majority of news articles tend to have neutral sentiment, with fewer articles expressing extreme positive or negative sentiment.
+- Stock Technical Analysis: Technical indicators like moving averages, RSI, and MACD were computed to assess stock trends and potential trading signals.
+- Correlation Analysis: A weak positive correlation was observed between news sentiment and stock closing prices, indicating that while sentiment may have an effect, it is not the primary driver of stock price movements.
+
+### Conclusion
+
+The analysis showed that there is a weak positive relationship between financial news sentiment and stock prices. While sentiment does have some effect, the correlation is not strong, suggesting that other factors also play significant roles in stock price movements.
 
 ## Contributing
 

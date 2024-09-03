@@ -6,11 +6,13 @@ The project involves analyzing a large corpus of financial news data to discover
 ### Notebooks:
 1. **Task1: Descriptive Statics, Text analysis (Sentiment analysis & Topic Modeling), Time Series Analysis, Publisher Analysis**
 2. **Task2: Quantitative analysis using pynance and TaLib**
+3. **Task3: Correlation analysis**
 
 ## Project Structure
 
 The repository is structured as follows:
 
+```
 ├── .vscode/
 │   └── settings.json
 ├── .github/
@@ -23,33 +25,57 @@ The repository is structured as follows:
 │   └── __init__.py
 ├── notebooks/
 │   ├── __init__.py
-|   ├── Task1.ipynb
-|   ├── Task2.ipynb
+│   ├── Task1.ipynb
+│   ├── Task2.ipynb
+│   ├── Task3.ipynb
 │   └── README.md
 ├── tests/
 │   └── __init__.py
 └── scripts/
     ├── __init__.py
     └── README.md
+```
 
 
 ## Notebooks
 
-**Task1**
-   - This notebook covers 
-    1. Descriptive Statistics:
-- To Obtain basic statistics for textual lengths (like headline length).
-- Count the number of articles per publisher to identify the most active publishers.
-- Analyze the publication dates to see trends, such as increased news frequency on particular days or during specific events.
-2. Text Analysis(Sentiment analysis & Topic Modeling):
-  - Perform sentiment analysis on headlines to gauge the sentiment (positive, negative, neutral) associated with the news.
-  - Use natural language processing to identify common keywords or phrases, potentially extracting topics or significant events (like "FDA approval", "price target", etc.).
-3. Time Series Analysis:
-- Analyzes the publication frequency over time.
-- Check for spikes in article publications related to specific market events.
-4. Publisher Analysis:
-- Checks which publishers contribute most to the news feed and check the difference in the type of news they report.
-- Identify unique domains to see if certain organizations contribute more frequently.
+This notebook covers:
+### Task1
+1. **Descriptive Statistics:**
+   - Obtain basic statistics for textual lengths (like headline length).
+   - Count the number of articles per publisher to identify the most active publishers.
+   - Analyze the publication dates to identify trends over time, such as increased news frequency on particular days or during specific events.
+
+2. **Text Analysis (Sentiment Analysis & Topic Modeling):**
+   - Perform sentiment analysis on headlines to gauge the sentiment (positive, negative, neutral) associated with the news.
+   - Use natural language processing (NLP) to identify common keywords or phrases, potentially extracting topics or significant events (like "FDA approval," "price target," etc.).
+
+3. **Time Series Analysis:**
+   - Analyze publication frequency over time.
+   - Check for spikes in article publications related to specific market events.
+   - Examine the alignment of news data with stock price data by normalizing timestamps.
+
+4. **Publisher Analysis:**
+   - Identify which publishers contribute most to the news feed and examine the differences in the type of news they report.
+   - Identify unique domains to see if certain organizations contribute more frequently.
+
+### Task2
+
+This notebook covers:
+
+- **Quantitative Analysis Using TA-Lib:**
+   - Calculation of financial metrics such as EMA (Exponential Moving Average), SMA (Simple Moving Average), MA (Moving Average), MACD (Moving Average Convergence Divergence), volatility, and RSI (Relative Strength Index).
+   - Visualization of these indicators to better understand their impact on stock prices.
+
+### Task3
+
+This notebook covers:
+
+- **Correlation Analysis:**
+   - Establishing statistical correlations between the sentiment derived from news articles and the corresponding stock price movements.
+   - Tracking stock price changes around the publication date of news articles and analyzing the impact of news sentiment on stock performance.
+   - Performing lagged correlation analysis to assess the impact of news sentiment over multiple days.
+   - Visual representation of correlation results to highlight key relationships.
 
 ## Setup and Installation
 
@@ -85,15 +111,19 @@ To run the notebooks locally, follow these steps:
      ```
 
 6. **Open the Notebook**:
-   - Once Jupyter Notebook is launched, open the Task1 notebook to run it interactively.
+   - Once Jupyter Notebook is launched, open the respective file (eg. Task1) notebook to run it interactively.
 
 ## Results
 
 The analysis results include:
-- **Descriptive Statistics**
-- **Text Analysis (Sentiment analysis and Topic modeling)**
-- **Time Series Analysis**
-- **Publisher Analysis**
+
+- **Descriptive Statistics:** Overview of headline lengths, article counts per publisher, and publication trends.
+- **Text Analysis:** Sentiment analysis results and key topics or phrases extracted from headlines.
+- **Time Series Analysis:** Insights into publication frequency trends and alignment with stock price data.
+- **Publisher Analysis:** Contributions of different publishers and their focus areas.
+- **Quantitative Analysis:** Technical indicators calculated using TA-Lib and their impact on stock prices.
+- **Correlation Analysis:** Statistical correlations between news sentiment and stock price movements, including lagged effects.
+
 
 ## Contributing
 
